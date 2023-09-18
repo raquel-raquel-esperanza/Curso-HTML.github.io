@@ -6,15 +6,17 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
+
     
     transition: background-color 0.3s; /* Transición suave para el cambio de color de fondo */
 
 }
 
-/* Estiliza los elementos de la lista y los enlaces */
+/* Estiliza los elementos del texto del men*/
 ul {
     list-style-type: none;
     text-align: right;
+    margin-right: 3rem;
 }
 
 li {
@@ -42,8 +44,10 @@ a:hover {
     height: 35rem; /* Altura del encabezado (ajusta según tus necesidades) */
     
     color: #ffffff; /* Color del texto en el encabezado para asegurar la legibilidad */
+    text-orientation: upright;
     text-align: center; /* Alinea el contenido al centro del encabezado */
     padding: 20px; /* Espacio de relleno interno para el contenido */
+    
     
 }
 
@@ -51,6 +55,8 @@ a:hover {
 #mi-encabezado h1 {
     font-size: 45px; /* Tamaño de fuente del título */
     font-family: Arial, Helvetica, sans-serif;
+    
+
 }
 
 #mi-encabezado p {
@@ -70,10 +76,20 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.texto {
+.contenido {
     color: #000000;
     font-size: 20px;
-
+    padding: 5%;
     text-align:justify;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer {
+    background-color: rgb(5,43,150); /* Cambia el color de fondo a azul */
+    padding: 10rem;
+    color: #fffdfd;
+    color: #ffffff; /* Color del texto en el encabezado para asegurar la legibilidad */
+    text-align: center; /* Alinea el contenido al centro del encabezado */
+   /* Espacio de relleno interno para el contenido */
+
 }

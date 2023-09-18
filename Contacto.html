@@ -1,10 +1,64 @@
 <!DOCTYPE html>
-<html>
-<head>
-   
-    <title>Contacto</title>
-</head>
+<html lang="en">
+<header id="mi-encabezado">
+<link rel="stylesheet" href="styles.css">
+       
+<title>CURSO HTML</title>
+ <!--create a navigation bar-->
+<nav>    
+<ul>
+<li><a href="index.html">Inicio</a></li>
+<li><a href="about.html">Acerca de </a></li>
+<li><a href="contacto.html">Contacto</a></li>
+</ul>
+</nav>
+
+
+    <h1 class="titulo"> Curso de HTML</h1>
+    <p>Contactos</p>
+
+</header>
 <body>
-    <h1>Contacto</h1>
+
+    <main>
+        <section class="contenido">
+            <h2> Cualquier duda e información que desees...
+            <tr><td> <hr>
+                </hr></h2>
+                <p>
+                Por favor contactanos:<p>
+                Telefono: 78582246<p>
+                Correo: queli1801gmail.com<p>
+                Correo: infoclassinsibo@gmail.com <p>
+                Facebook: Infoclass Insibo<p>
+
+                </p>
+                <p>
+                
+              
+                </td></tr>
+            
+        </section>
+    </main>
+
+    <div class="footer">Derechos reservados © 2023 Raquel Medrano</div>
+    
+    <script>
+        // Selecciona el menú y el encabezado
+        const menu = document.querySelector("nav");
+        const header = document.querySelector("#mi-encabezado");
+
+        // Obtén la altura del encabezado
+        const headerHeight = header.offsetHeight;
+
+        // Función que cambia el color de fondo del menú cuando se desplaza
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > headerHeight) {
+                menu.style.backgroundColor = "rgb(5,43,150)"; // Cambia el color de fondo a azul
+            } else {
+                menu.style.backgroundColor = "rgba(0, 0, 0, 0)"; // Vuelve al fondo transparente
+            }
+        });
+    </script>
 </body>
 </html>

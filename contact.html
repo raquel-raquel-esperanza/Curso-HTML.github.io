@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-<header id="mi-encabezado">
+<html lang="es">
+
+<!--invoca al archivo style.css que contiene todas las configuraciones de estilos de la página-->
 <link rel="stylesheet" href="styles.css">
-       
+
+ <!--Encabezado, el valor atributo id invoca a una funcion del archivo style.css para dar el formato del menu--> 
+<header id="mi-encabezado"></header>
+
 <title>CURSO HTML</title>
  <!--create a navigation bar-->
+ <!--Creacion del menú utilizando nav-->
 <nav>    
 <ul>
 <li><a href="index.html">Inicio</a></li>
@@ -13,11 +18,13 @@
 </ul>
 </nav>
 
-
-    <h1 class="titulo"> Curso de HTML</h1>
+ <!--Texto del encabezado-->
+    <h1> Curso de HTML</h1>
     <p>Contactos</p>
 
 </header>
+
+<!--Cuerpo del HTML. Las configuraciones de estilos se encuentran en el archivo style.css-->
 <body>
 
     <main>
@@ -39,8 +46,11 @@
         </section>
     </main>
 
+    <!--Pie de pagina-->
+    <!--el atributo Class="footer" invoca a una funcion del archivo style.css para dar el formato del pie de pagina-->
     <div class="footer">Derechos reservados © 2023 Raquel Medrano</div>
     
+    <!--Invoca al archivo script.js que contiene la funcion que controla el comportamiento del menu-->
     <script src="script.js"></script>
 </body>
 </html>

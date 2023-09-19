@@ -1,26 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
-<header id="mi-encabezado">
+<html lang="es">
+
+<!--invoca al archivo style.css que contiene todas las configuraciones de estilos de la página-->
 <link rel="stylesheet" href="styles.css">
-       
-<title>CURSO HTML</title>
- <!--create a navigation bar-->
-<nav>    
-<ul>
-<li><a href="index.html">Inicio</a></li>
-<li><a href="about.html">Acerca de </a></li>
-<li><a href="contact.html">Contacto</a></li>
-</ul>
-</nav>
 
+<!--Encabezado, el valor atributo id invoca a una funcion del archivo style.css para dar el formato del menu-->
+<header id="mi-encabezado">
+   
+        
+    <title>CURSO HTML</title>
+    <!--Creacion del menú utilizando Nav-->
+    <nav>    
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="about.html">Acerca de </a></li>
+            <li><a href="contact.html">Contacto</a></li>
+        </ul>
+    </nav>
 
-    <h1 class="titulo"> Curso de HTML</h1>
+    <!--Texto del encabezado-->
+    <h1>Curso de HTML</h1>
     <p>Bienvenidos</p>
 
 </header>
+
+<!--Cuerpo del HTML. Las configuraciones de estilos se encuentran en el archivo style.css-->
 <body>
 
     <main>
+        <!--*CONFIGURACION DEL TEXTO EN EL CUERPO. El tamño y tipo de letra estan especificados en el archivo style.css*-->
         <section class="contenido">
             <h1> Bienvenidos al Curso de HTML
             <tr><td> <hr>
@@ -72,24 +80,12 @@
         </section>
     </main>
 
+    <!--Pie de pagina-->
+    <!--el atributo Class="footer" invoca a una funcion del archivo style.css para dar el formato del pie de pagina-->
     <div class="footer">Derechos reservados © 2023 Raquel Medrano</div>
     
-    <script>
-        // Selecciona el menú y el encabezado
-        const menu = document.querySelector("nav");
-        const header = document.querySelector("#mi-encabezado");
-
-        // Obtén la altura del encabezado
-        const headerHeight = header.offsetHeight;
-
-        // Función que cambia el color de fondo del menú cuando se desplaza
-        window.addEventListener("scroll", () => {
-            if (window.scrollY > headerHeight) {
-                menu.style.backgroundColor = "rgb(5,43,150)"; // Cambia el color de fondo a azul
-            } else {
-                menu.style.backgroundColor = "rgba(0, 0, 0, 0)"; // Vuelve al fondo transparente
-            }
-        });
-    </script>
+    <!--Invoca al archivo script.js que contiene la funcion que controla el comportamiento del menu-->
+    <script src="script.js"></script>   
+  
 </body>
 </html>

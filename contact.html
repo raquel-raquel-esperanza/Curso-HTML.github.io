@@ -1,25 +1,25 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- Indica que es un documento HTML, de lo contrario si no lo ponemos, lo interpretaria como codigo antiguo antes de los 90's Quirks mode, aparecerian codigos antiguos -->
 <html lang="es">
 
 <!--invoca al archivo style.css que contiene todas las configuraciones de estilos de la página-->
 <link rel="stylesheet" href="styles.css">
 
- <!--Encabezado, el valor atributo id invoca a una funcion del archivo style.css para dar el formato del menu--> 
-<header id="mi-encabezado"></header>
+<!--Encabezado, el valor atributo id invoca a una funcion del archivo style.css para dar el formato del menu-->
+<header id="mi-encabezado">
+   
+        
+    <title>CURSO HTML</title>
+    <!--Creacion del menú utilizando Nav-->
+    <nav>    
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="about.html">Acerca de </a></li>
+            <li><a href="contact.html">Contacto</a></li>
+        </ul>
+    </nav>
 
-<title>CURSO HTML</title>
- <!--create a navigation bar-->
- <!--Creacion del menú utilizando nav-->
-<nav>    
-<ul>
-<li><a href="index.html">Inicio</a></li>
-<li><a href="about.html">Acerca de </a></li>
-<li><a href="contact.html">Contacto</a></li>
-</ul>
-</nav>
-
- <!--Texto del encabezado-->
-    <h1> Curso de HTML</h1>
+    <!--Texto del encabezado-->
+    <h1>Curso de HTML</h1>
     <p>Contactos</p>
 
 </header>
@@ -29,7 +29,7 @@
 
     <main>
         <section class="contenido">
-            <h2> Cualquier duda e información que desees...
+            <h2> <span style="background-color: rgb(208, 209, 245);" ;>Cualquier duda e información que desees...</span>
             <tr><td> <hr>
                 </hr></h2>
                 <p>
@@ -51,6 +51,6 @@
     <div class="footer">Derechos reservados © 2023 Raquel Medrano</div>
     
     <!--Invoca al archivo script.js que contiene la funcion que controla el comportamiento del menu-->
-    <script src="script.js"></script>
+    <script src="script.js"></script>   
 </body>
 </html>
